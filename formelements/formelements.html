@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <form action="asp.net" name="onay" method="get">
+        <input type="checkbox" name="onay" > Okudum, onaylıyorum
+        <br>  <!--checkbox kullanırken name özelliği farklı olmak zorunda.-->
+        <input type="checkbox" name="bildirim">  Bildirimleri aç
+        <br> <br>
+        <input type="reset">
+        <input type="submit">
+    </form>
+<br><br><br>
+    <form action="liste.html" method="get" name="">
+        <h2>Sevdiğiniz sporu seçin</h2> <!--sadece bir tane seçim yapılması isteniyorsa radio
+        kullanılır ve nameleri aynı olmalıdır.-->
+        <input type="radio" name="spor" checked> Futbol
+        <input type="radio" name="spor"> Basketbol
+        <input type="radio" name="spor"> Voleybol
+        <br> <br>
+        <input type="submit">
+    </form>
+<br><br>
+    <!-- Seçenek Listesi - Combobox-->
+    <h2>Seçenek Listesi/Combo</h2>
+    <form action="" name="secenek">
+        Doğum Yeri
+        <select name="iller">
+            <option>İstanbul</option>
+            <option>Ankara</option>
+            <option>İzmir</option>
+            <option selected>Elazığ</option>
+        </select>
+        <br>
+        <br>
+        <input type="reset"> <input type="submit">
+        <input type="hidden" name="tarih" value="21 Şubat"/>
+        <!-- hidden, ziyaretçinin görmesi gerekmeyen verileri göndermek
+        için kullanılır-->
+    </form>
+    <br><br><br><br>
+    <form action="">
+        <table>
+            <tr>
+              <td>Ad Soyad </td>
+              <td><input type="text" ></td>
+             </tr>
+
+             <tr>
+                 <td>Email</td>
+                 <td><input type="email"></td>
+             </tr>
+
+             <tr>
+                <td>İleti</td>
+                <td> <textarea name="ileti" cols="20" rows="5"></textarea></td>
+             </tr>
+
+             <tr>
+                 <td>tarih</td>
+                <td><input type="datetime-local"</td>
+            </tr>
+
+            <tr>
+                    <td>renk</td>
+                    <td><input type="color" name="renk" id="" ></td>
+             </tr>
+
+             <tr>
+                 <td>range</td>
+                 <td><input type="range" name="range" id=""></td>
+             </tr>
+
+            <tr>
+                <td>tel</td>
+                <td><input type="tel" name="tel" id=""></td>
+            </tr>
+
+            <tr>
+                <td>search</td>
+                <td><input type="search" name="" id=""></td>
+            </tr>
+
+             <tr>
+                 <!--resimli buton -->
+                 <td><input type="image" src="./siyah-indir-buton.jpg" width="100"></td>
+             </tr>
+
+           
+
+    </table>
+    </form>
+</body>
+</html>
