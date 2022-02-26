@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formlar</title>
+</head>
+<body>
+    <h1>Kayıt Formu</h1>
+    <form action="kayit.php" name="kayit" method="get"> <!--name: forma isim vermek için, action: forma girilen verilerin hangi sayfaya gönderileceğini belirler
+    method: verilerin hedef sayfaya gönderilme yöntemini belirlemek için kullanılır.  Get verileri görünür şekilde gönderir          -->
+        Ad  <input type="text" name="ad" id="" required >
+        <br>
+        Soyad <input type="text" name="soyad" id="" required>
+        <br>
+        Email <input type="email" name="email" id="" required>
+        <br>
+        Yaşınız <input type="number" name="yas" required min="18">
+        <br>
+        Web Sitesi: <input type="url" name="url">
+        <br> 
+        Şifre <input type="password" name="sifre" id="" maxlength="10"required>
+        <br> <br>
+        <input type="reset" value="Sıfırla">
+        <input type="submit">
+        
+
+
+    </form>
+</body>
+</html>

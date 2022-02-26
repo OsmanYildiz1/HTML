@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablolar</title>
+</head>
+<body>
+    <h1>Ülkeler</h1>
+    <table border="solid 2px" style="width: 100%;">
+        <tr> <!--table row satırları temsil eder-->
+            <th>Ülkeler</th> <!-- table head, tablo başlığı-->
+            <td>Amerika</td>  <!-- table data-->
+            <td>Türkiye</td>
+            <td>İngiltere</td>
+            <td>İtalya</td>
+        </tr>
+
+        <tr>
+            <th>Başkentler</th>
+            <td >New York</td>
+            <td>Ankara</td>
+            <td>Londra</td>
+            <td>Roma</td>
+        </tr>
+
+        <tr>
+            <th>Takımlar</th>
+            <td>XX FC</td>
+            <td>Galatasaray</td>
+            <td>Manchester United</td>
+            <td>Inter</td>
+        </tr>
+    </table>
+    <br><br>
+
+    <!--Hücreleri Birleştirme!!
+    colspan:satırlardaki hücreleri birleştirir
+    rowspan:sütunlardaki hücreleri birleştirir.-->
+
+    <table border="2px" style="border-collapse: collapse; width: 100%; color:white;">
+        <caption>Ülke Nufusları</caption>
+        <thead>
+            <tr>
+                <th>Ülke</th>
+                <th>Nüfus</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Türkiye</td>
+                <td>80000000</td>
+            </tr>
+            <tr>
+                <td>Yunanistan</td>
+                <td rowspan="2">465136</td>
+            </tr>
+
+            <tr>
+                <td>Bulgaristan</td>
+             
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Toplam Nüfus:46164512645</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

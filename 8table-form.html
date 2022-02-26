@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablo-Form</title>
+</head>
+<body>
+    <form action="kayit.php" name="kayit" method="post" autocomplete="on"> <!--otomatik tamamlama özelliği
+    açık.-->
+        <table >
+            <tr>
+                <td>Ad</td>
+                <td><input type="text" name="ad" required autofocus></td> <!--autofocus sayfa açıldı
+                ğında fare imlecinin form elemanını aktif etmesini sağlar.-->
+            </tr>
+            <tr>
+                <td>Soyad</td>
+                <td><input type="text" name="soyad" required ></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email" required ></td>
+            </tr>
+            <tr>
+                <td>Yaş</td>
+                <td><input  type="number" name="yas" required min="12"></td>
+            </tr>
+            <tr>
+                <td>Öneriler</td>
+                <td><input type="text" placeholder="Web sitemiz hakkındaki önerilerinizi yazınız.."></td>
+                <!--placeholder ipucu verir-->
+            </tr>
+            <tr>
+                <td>Web Sitesi</td>
+                <td><input type="url" disabled></td>
+            </tr>
+            <tr>
+                <td>Aradığınız nedir?</td>
+                <td><textarea name="" id="" cols="20" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td>Şifre</td>
+                <td><input type="password" name="sifre" required maxlength="10"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input  type="submit" name="gonder"> <input type="reset" value="Temizle"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
